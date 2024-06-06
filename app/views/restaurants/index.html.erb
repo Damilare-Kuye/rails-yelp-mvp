@@ -1,8 +1,7 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<div class="page">
 <h1>All Restaurants</h1>
 
-<%= link_to 'Add New Restaurant', new_restaurant_path %>
+<%= link_to 'Add New Restaurant', new_restaurant_path, class: 'button-link' %>
 
 <ul>
   <% @restaurants.each do |restaurant| %>
@@ -11,3 +10,4 @@
     </li>
   <% end %>
 </ul>
+</div>

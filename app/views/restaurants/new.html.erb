@@ -1,6 +1,8 @@
-<h1>Restaurants#new</h1>
-<p>Find me in app/views/restaurants/new.html.erb</p>
-<% simple_form_for(@restaurant) do |f| %>
+<div class="page">
+
+<h1>New Restaurant </h1>
+
+<%= simple_form_for (@restaurant) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :address %>
@@ -9,3 +11,4 @@
   <%= f.select :category, options_for_select(['chinese', 'italian', 'japanese', 'french', 'belgian']) %>
   <%= f.submit 'Create Rest'%>
 <% end %>
+</div>
