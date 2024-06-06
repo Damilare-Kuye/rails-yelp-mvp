@@ -3,12 +3,16 @@
 <h1>New Restaurant </h1>
 
 <%= simple_form_for (@restaurant) do |f| %>
+
   <%= f.label :name %>
   <%= f.text_field :name %>
+
   <%= f.label :address %>
   <%= f.text_field :address %>
+
   <%= f.label :category %>
   <%= f.select :category, options_for_select(['chinese', 'italian', 'japanese', 'french', 'belgian']) %>
-  <%= f.submit 'Create Rest'%>
+
+  <%= f.submit 'Create Restuarant', class: "submit-button"%>
 <% end %>
 </div>
